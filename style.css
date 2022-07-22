@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(58, 56, 56);
+}
+--
+li, a, button{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+.logo{
+    cursor: pointer;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 5px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav_links li .home:hover{
+    color: rgb(173, 6, 6);
+}
+.nav_links li .protein:hover{
+    color: rgb(7, 194, 201);
+}
+.nav_links li .gainer:hover{
+    color: rgb(173, 129, 6);
+}
+.nav_links li .creatine:hover{
+    color: rgb(7, 179, 16);
+}
+.nav_links li .clothes:hover{
+    color: rgb(200, 12, 218);
+}
+
+button{
+    margin-left: 20px;
+    padding: 15px 25px;
+    background-color: rgb(0, 135, 169);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+}
+.logo{
+    width: 250px;
+    height: 230px;
+}
+.cart{
+    margin-right: 0px;
+    width: 60px;
+}.btn{
+    flex-wrap: wrap;
+    width: 300px;
+    height: 290px;
+    margin: 5px 0;
+    background-color: rgb(225, 238, 236);
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0px, 8px, 15px
+        rgba(0, 0, 0, 0.1);
+}.btn:hover{
+    background-color: aqua;
+    transform: translateY(-7px);
+    color: #fff;
+    box-shadow: 0px 10px 25px
+        rgba(28, 234, 241, 0.445);
+}
+.protein_container{
+    background: linear-gradient(135deg, rgba(116, 110, 110, 0.1), rgba(255, 255, 255, 0.158));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0px rgba(0, 0, 0, 0.37);
+    width: 1550px;
+    height: 310px;
+    border: solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(60deg, #b16ec4, #5f97b9);
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.protein_container img{
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    margin: 5px 0;
+}
+.protein1{background-image: url(images/proteins/pure_protein.png);}
+.protein2{background-image: url(images/proteins/gold_standard.png);}
+.protein3{background-image: url(images/proteins/whey_impact.png);}
+.protein4{background-image: url(images/proteins/elite.png);}
+.protein5{background-image: url(images/proteins/protein5.png);}
+.protein6{background-image: url(images/proteins/protein6.png);}
+.protein7{background-image: url(images/proteins/protein7.png);}
+.protein8{background-image: url(images/proteins/protein8.png);}
+
+.btng{
+    flex-wrap: wrap;
+    width: 300px;
+    height: 290px;
+    margin: 5px 0;
+    background-color: rgb(241, 204, 100);
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0px, 8px, 15px
+        rgba(0, 0, 0, 0.1);
+}.btng:hover{
+    background-color: rgb(255, 251, 0);
+    transform: translateY(-7px);
+    color: #fff;
+    box-shadow: 0px 10px 25px
+        rgba(223, 66, 4, 0.856);
+}
+.gainer_container{
+    background: linear-gradient(135deg, rgba(116, 110, 110, 0.1), rgba(255, 255, 255, 0.158));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0px rgba(0, 0, 0, 0.37);
+    width: 1550px;
+    height: 310px;
+    border: solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(60deg, #b16ec4, #5f97b9);
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.gainer_container img{
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    margin: 5px 0;
+}
+.gainer1{background-image: url(images/gainers/g\ \(1\).png);}
+.gainer2{background-image: url(images/gainers/g\ \(2\).png);}
+.gainer3{background-image: url(images/gainers/g\ \(3\).png);}
+.gainer4{background-image: url(images/gainers/g\ \(4\).png);}
+.gainer5{background-image: url(images/gainers/g\ \(5\).png);}
+.gainer6{background-image: url(images/gainers/g\ \(6\).png);}
+
+.btnc{
+    flex-wrap: wrap;
+    width: 300px;
+    height: 290px;
+    margin: 5px 0;
+    background-color: rgba(77, 169, 245, 0.884);
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0px, 8px, 15px
+        rgba(0, 0, 0, 0.1);
+}.btnc:hover{
+    background-color: rgb(72, 255, 0);
+    transform: translateY(-7px);
+    color: #fff;
+    box-shadow: 0px 10px 25px
+        rgba(23, 230, 92, 0.856);
+}
+.creatine_container{
+    background: linear-gradient(135deg, rgba(116, 110, 110, 0.1), rgba(255, 255, 255, 0.158));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0px rgba(0, 0, 0, 0.37);
+    width: 1550px;
+    height: 310px;
+    border: solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(60deg, #b16ec4, #5f97b9);
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.creatine_container img{
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    margin: 5px 0;
+}
+.creatine1{background-image: url(images/creatine/c\ \(1\).png);}
+.creatine2{background-image: url(images/creatine/c\ \(2\).png);}
+.creatine3{background-image: url(images/creatine/c\ \(3\).png);}
+.creatine4{background-image: url(images/creatine/c\ \(4\).png);}
+.creatine5{background-image: url(images/creatine/c\ \(5\).png);}
+.creatine6{background-image: url(images/creatine/c\ \(6\).png);}
