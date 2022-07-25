@@ -48,7 +48,7 @@ header{
     color: rgb(200, 12, 218);
 }
 
-button{
+.myCart{
     margin-left: 20px;
     padding: 15px 25px;
     background-color: rgb(0, 135, 169);
@@ -57,7 +57,7 @@ button{
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
-button:hover{
+.myCart:hover{
     background-color: rgba(0, 136, 169, 0.8);
 }
 .logo{
@@ -179,3 +179,53 @@ button:hover{
 .creatine4{background-image: url(images/creatine/c\ \(4\).png);}
 .creatine5{background-image: url(images/creatine/c\ \(5\).png);}
 .creatine6{background-image: url(images/creatine/c\ \(6\).png);}
+
+
+.gender{
+    flex-wrap: wrap;
+    width: 1202px;
+    height: 500px;
+    margin: 5px 0;
+    align-items: top;
+    justify-content: center;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.clothesW{
+    width: 600px;
+    height: 400px;
+    background-image: url(images/women.png);
+    transform: translateX(-3.5px);
+}
+.clothesM{
+    width: 600px;
+    height: 400px;
+    background-image: url(images/men.png);
+    transform: translateX(3.5px);
+}
+.clothesM:hover{
+    background-color: rgb(252, 255, 250);
+    color: #fff;
+    box-shadow: 0px 10px 25px
+        rgba(23, 230, 161, 0.856);
+        transform: translateY(-7px);
+}.clothesW:hover{
+    background-color: rgb(252, 255, 250);
+    color: #fff;
+    box-shadow: 0px 10px 25px
+        rgba(225, 88, 243, 0.925);
+        transform: translateY(-7px);
+        
+}
+h1{
+    font-size: 60px;
+    margin-left: 33%;
+    color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p{
+    padding-top: 10px;
+    color: white;
+    margin-left: 25%;
+}
