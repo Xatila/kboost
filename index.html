@@ -21,7 +21,48 @@
                 <a href="#"><button class="myCart">My cart</button></a>
                 <a href="#"><img class="cart" src="images/cart.png" alt="cart"></a>
             </header>
-        
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <div class="slide first">
+                        <img src="images/basicPack.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/rarePack.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/legendaryPack.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/ultraPack.png" alt="">
+                    </div>
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1"></label>
+                    <label for="radio2"></label>
+                    <label for="radio3"></label>
+                    <label for="radio4"></label>    
+                </div>
+            </div>
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function(){
+                    document.getElementById('radio1' + counter).checked = true;
+                    counter++;
+                    if(counter>4){
+                        counter=1;
+                    }
+                }, 5000);
+            </script>
         </body>
     </head>
 </html>
