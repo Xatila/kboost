@@ -3,6 +3,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
         <title>k-boost</title>
         <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     
@@ -21,48 +22,48 @@
                 <a href="#"><button class="myCart">My cart</button></a>
                 <a href="#"><img class="cart" src="images/cart.png" alt="cart"></a>
             </header>
-            <div class="slider">
-                <div class="slides">
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-                    <div class="slide first">
-                        <img src="images/basicPack.png" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="images/rarePack.png" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="images/legendaryPack.png" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="images/ultraPack.png" alt="">
-                    </div>
-                    <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                        <div class="auto-btn4"></div>
+            <article class="card">
+                <div class="card__content">
+                  <h3 class="card__title">ABOUT US:</h3>
+                  <p class="card__description">Hello! K-boost INCⒸ is a new generation company which has a mission to sell
+                    high quality products to our customers. Everything which our products contains is 100% bio and tested to the full
+                    maximum. The major thing which separate us from the others is that we are a company which name is more important than our sellings.
+                    Our slogan is: "Make impossible possible!". Greetings by all in the team. You can find us on street: "Vasil Levski" №97 city Kostandovo, country Bulgaria or on
+                    phone: +359 89 725 6650.</p>
+                </div>
+              </article>
+                <h1 class="h1Home">BEST DEAL</h1>
+                <div class="slider">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/basicPack.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/rarePack.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/legendaryPack.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="images/ultraPack.jpg" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
-                <div class="navigation-manual">
-                    <label for="radio1"></label>
-                    <label for="radio2"></label>
-                    <label for="radio3"></label>
-                    <label for="radio4"></label>    
-                </div>
-            </div>
-            <script type="text/javascript">
-                var counter = 1;
-                setInterval(function(){
-                    document.getElementById('radio1' + counter).checked = true;
-                    counter++;
-                    if(counter>4){
-                        counter=1;
-                    }
-                }, 5000);
-            </script>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+            <script>const swiper = new Swiper('.swiper', {
+                autoplay:{
+                    delay: 4000,
+                    disableOnInteraction:false,
+                },
+                loop: true,
+                pagination: {
+                  el: '.swiper-pagination',
+                  clickable:true,
+                },
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+              });</script>
         </body>
     </head>
 </html>
