@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -50,7 +52,7 @@ header{
     color: rgb(200, 12, 218);
 }
 
-.myCart{
+.contactBtn{
     margin-left: 20px;
     padding: 15px 25px;
     background-color: rgb(0, 135, 169);
@@ -59,7 +61,7 @@ header{
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
-.myCart:hover{
+.contactBtn:hover{
     background-color: rgba(0, 136, 169, 0.8);
 }
 .logo{
@@ -220,17 +222,6 @@ header{
         transform: translateY(-7px);
         
 }
-h1{
-    font-size: 60px;
-    margin-left: 33%;
-    color:white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-p{
-    padding-top: 10px;
-    color: white;
-    margin-left: 25%;
-}
 section{
     padding: 20px 0;
     margin-top: 200px;
@@ -260,6 +251,8 @@ section{
 .pants6{background-image: url(images/women_clothes/pants\ \(6\).png);}
 
 .womenTag{
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     -webkit-text-stroke: black 0.2px;
     border: solid white 5px;
     border-radius: 20px;
@@ -291,6 +284,8 @@ section{
 .pantsm4{background-image: url(images/men_clothes/pants\ \(4\).png);}
 .pantsm5{background-image: url(images/men_clothes/pants\ \(5\).png);}
 .menTag{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
     -webkit-text-stroke: black 0.2px;
     border: solid white 5px;
     border-radius: 20px;
@@ -334,6 +329,8 @@ background: none;
 .swiper .swiper-pagination-bullet-active{
     background: white;
 }.h1Home{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
     width: 400px;
     -webkit-text-stroke: black 1px;
     background-color: red;
@@ -418,4 +415,32 @@ background: none;
 .card:hover .card__content {
     opacity: 1;
     transition-delay: .75s;
+}
+.clothesWrapText{
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+}
+.text{
+    display: flex   ;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    color: #fff;
+}
+.clothesWrapHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.heading{
+    background: linear-gradient(90deg,#00dbde,#fc00ff);
+    font-size: 82px;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
